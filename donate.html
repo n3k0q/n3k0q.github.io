@@ -1,0 +1,46 @@
+    <script>
+        var example = ['Redirecting.', 'Redirecting..', 'Redirecting...', 'Go!'];
+
+        textSequence(0);
+        function textSequence(i) {
+
+            if (example.length > i) {
+                setTimeout(function() {
+                    document.getElementById("sequence").innerHTML = example[i];
+                    textSequence(++i);
+                }, 500); // 1 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+                textSequence(0);
+            }
+
+        }
+    </script>
+    <script>
+        var example = ['Redirecting.', 'Redirecting..', 'Redirecting...', 'Go!'];
+
+        textSequence(0);
+        function textSequence(i) {
+
+            if (example.length > i) {
+                setTimeout(function() {
+                    document.getElementById("sequence2").innerHTML = example[i];
+                    textSequence(++i);
+                }, 500); // 1 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+                textSequence(0);
+            }
+
+        }
+    </script>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title id='sequence'>Redirect</title>
+      <meta http-equiv = "refresh" content = "1.6 url = https://www.donationalerts.com/r/leikyroblox" />
+   </head>
+   <body>
+      <h1, id="sequence2">Redirecting</h1>
+   </body>
+</html>

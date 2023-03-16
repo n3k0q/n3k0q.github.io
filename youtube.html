@@ -1,0 +1,47 @@
+    <script>
+        var example = ['Redirecting.', 'Redirecting..', 'Redirecting...', 'Go!'];
+
+        textSequence(0);
+        function textSequence(i) {
+
+            if (example.length > i) {
+                setTimeout(function() {
+                    document.getElementById("sequence").innerHTML = example[i];
+                    textSequence(++i);
+                }, 500); // 1 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+                textSequence(0);
+            }
+
+        }
+    </script>
+    <script>
+        var example = ['Redirecting.', 'Redirecting..', 'Redirecting...', 'Go!'];
+
+        textSequence(0);
+        function textSequence(i) {
+
+            if (example.length > i) {
+                setTimeout(function() {
+                    document.getElementById("sequence2").innerHTML = example[i];
+                    textSequence(++i);
+                }, 500); // 1 second (in milliseconds)
+
+            } else if (example.length == i) { // Loop
+                textSequence(0);
+            }
+
+        }
+    </script>
+<!DOCTYPE html>
+<html>
+   <head>
+      <title id='sequence'>Redirect</title>
+      <meta http-equiv = "refresh" content = "2.1 url = https://www.youtube.com/channel/UCdcHzr8uRy0EuysFX6GTn1Q" />
+   </head>
+  <h1 id='sequence2'>
+    Redirecting
+  </h1>
+   <body>
+   </body>
